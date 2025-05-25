@@ -1,8 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MOVIE FLIX</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
         ul {
             list-style: none;
             padding: 0;
@@ -14,53 +24,79 @@
 
         li {
             text-align: center;
+            max-width: 200px;
+            flex: 1 1 200px;
         }
 
         img {
-            width: 200px;
-            height: 300px;
+            width: 100%;
+            max-width: 200px;
+            height: auto;
             object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             display: block;
-            margin: auto;
+            margin: 0 auto 10px;
+        }
+
+        /* Responsive for small screens */
+        @media (max-width: 600px) {
+            ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            li {
+                max-width: 100%;
+                flex: none;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #007BFF;
         }
     </style>
 </head>
 <body>
-    <center><h1><b>MOVIE FLIX</b></h1></center>
+    <h1><b>MOVIE FLIX</b></h1>
     <hr>
 
     <h2><b>Genre</b></h2>
     <ul>
-        <li><b><a href="./genre/action.html">ACTION</a></b></li>
-        <li><b><a href="./genre/comedy.html">COMEDY</a></b></li>
-        <li><b><a href="./genre/horror.html">HORROR</a></b></li>
-        <li><b><a href="./genre/fantasy.html">FANTASY</a></b></li>
+        <li><a href="./genre/action.html">ACTION</a></li>
+        <li><a href="./genre/comedy.html">COMEDY</a></li>
+        <li><a href="./genre/horror.html">HORROR</a></li>
+        <li><a href="./genre/fantasy.html">FANTASY</a></li>
     </ul>
     <hr>
 
     <h2><b>Home</b></h2>
     <ul>
-        <li><img src="https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_.jpg"><center><b>AVENGERS</b></center></li>
-        <li><img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_FMjpg_UX1000_.jpg"><center><b>IRON MAN</b></center></li>
-        <li><img src="https://m.media-amazon.com/images/M/MV5BNzUyM2YyY2MtNzNlMS00MWU5LTgxNjAtNzZlNmI2NjU2NDZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"><center><b>CAPTAIN AMERICA</b></center></li>
-        <li><img src="https://m.media-amazon.com/images/M/MV5BMTk3NDY5MTU0NV5BMl5BanBnXkFtZTgwNDI3MDE1NTM@._V1_FMjpg_UX1000_.jpg"><center><b>MISSION IMPOSSIBLE</b></center></li>
-        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo1w35AsAv2sISXApGQxf8hD_gO4d_A_ZC3Q&s"><center><b>THE CONJURING</b></center></li>
-        <li><img src="https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_FMjpg_UX1000_.jpg"><center><b>THE INCREDIBLES</b></center></li>
-        <li><img src="https://m.media-amazon.com/images/M/MV5BNWRmZGQyYzgtNjA5OC00NGYzLTlhYWMtNzBhZTFlZGNjYWI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"><center><b>EVIL DEAD</b></center></li>
-        <li><img src="https://image.tmdb.org/t/p/original/fj7sX7w0MfIxWylcizp5ArPIMFs.jpg"><center><b>BLACK PANTHER</b></center></li>
-        <li><img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/178355674600a156eb0aa8bc436714aeefbdedd53b2312b6003d3277f47be6e4._RI_V_TTW_.jpg"><center><b>AVENGERS: AGE OF ULTRON</b></center></li>
-        <li><img src="https://cdna.artstation.com/p/assets/images/images/018/256/764/large/george-britton-infinitywarposterv2.jpg?1558723043"><center><b>AVENGERS: INFINITY WAR</b></center></li>
-        <li><img src="https://www.themoviedb.org/t/p/original/3Q7VxyZlqCEfiUY9E9bcBE9qcyu.jpg"><center><b>THOR</b></center></li>
-        <li><img src="https://www.themoviedb.org/t/p/original/eIVUklx4jDqqmVHKIJ7oOAtTLZC.jpg"><center><b>THOR: THE DARK WORLD</b></center></li>
-        <li><img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_FMjpg_UX1000_.jpg"><center><b>MINECRAFT MOVIE</b></center></li>
-        <li><img src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/2024/09/thunderbolts-poster.jpeg" alt="Thunderbolts"><center><b>THUNDERBOLTS</b></center></li>
-        <li><img src="https://www.movienewsletters.net/photos/321703R1.jpg"><center><b>Harry Potter and the Sorcerer's Stone</b></center></li>
-        <li><img src="https://www.themoviedb.org/t/p/original/koNxGpDq5eIDBlXPX1GQtBuOiPS.jpg"><center><b>The Lord of the Rings: The Fellowship of the Ring</b></center></li>
-        <li><img src="https://www.themoviedb.org/t/p/original/9eM0qvA1iHARvtOMBMMbpOgtEJw.jpg"><center><b>Fantastic Beasts and Where to Find Them</b></center></li>
-        <li><img src="https://image.tmdb.org/t/p/original/kpGNMRU8n74sZ2tVyACcV3ppRpO.jpg"><center><b>The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</b></center></li>
-        <li><img src="https://www.themoviedb.org/t/p/original/f2XXKzOn9WJAavz0sVka6aaonPR.jpg"><center><b>Pan's Labyrinth</b></center></li>
+        <li><img src="https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_.jpg" alt="Avengers"><b>AVENGERS</b></li>
+        <li><img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_FMjpg_UX1000_.jpg" alt="Iron Man"><b>IRON MAN</b></li>
+        <li><img src="https://m.media-amazon.com/images/M/MV5BNzUyM2YyY2MtNzNlMS00MWU5LTgxNjAtNzZlNmI2NjU2NDZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Captain America"><b>CAPTAIN AMERICA</b></li>
+        <li><img src="https://m.media-amazon.com/images/M/MV5BMTk3NDY5MTU0NV5BMl5BanBnXkFtZTgwNDI3MDE1NTM@._V1_FMjpg_UX1000_.jpg" alt="Mission Impossible"><b>MISSION IMPOSSIBLE</b></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo1w35AsAv2sISXApGQxf8hD_gO4d_A_ZC3Q&s" alt="The Conjuring"><b>THE CONJURING</b></li>
+        <li><img src="https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_FMjpg_UX1000_.jpg" alt="The Incredibles"><b>THE INCREDIBLES</b></li>
+        <li><img src="https://m.media-amazon.com/images/M/MV5BNWRmZGQyYzgtNjA5OC00NGYzLTlhYWMtNzBhZTFlZGNjYWI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Evil Dead"><b>EVIL DEAD</b></li>
+        <li><img src="https://image.tmdb.org/t/p/original/fj7sX7w0MfIxWylcizp5ArPIMFs.jpg" alt="Black Panther"><b>BLACK PANTHER</b></li>
+        <li><img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/178355674600a156eb0aa8bc436714aeefbdedd53b2312b6003d3277f47be6e4._RI_V_TTW_.jpg" alt="Avengers: Age of Ultron"><b>AVENGERS: AGE OF ULTRON</b></li>
+        <li><img src="https://cdna.artstation.com/p/assets/images/images/018/256/764/large/george-britton-infinitywarposterv2.jpg?1558723043" alt="Avengers: Infinity War"><b>AVENGERS: INFINITY WAR</b></li>
+        <li><img src="https://www.themoviedb.org/t/p/original/3Q7VxyZlqCEfiUY9E9bcBE9qcyu.jpg" alt="Thor"><b>THOR</b></li>
+        <li><img src="https://www.themoviedb.org/t/p/original/eIVUklx4jDqqmVHKIJ7oOAtTLZC.jpg" alt="Thor: The Dark World"><b>THOR: THE DARK WORLD</b></li>
+        <li><img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_FMjpg_UX1000_.jpg" alt="Minecraft Movie"><b>MINECRAFT MOVIE</b></li>
+        <li><img src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/2024/09/thunderbolts-poster.jpeg" alt="Thunderbolts"><b>THUNDERBOLTS</b></li>
+        <li><img src="https://www.movienewsletters.net/photos/321703R1.jpg" alt="Harry Potter and the Sorcerer's Stone"><b>Harry Potter and the Sorcerer's Stone</b></li>
+        <li><img src="https://www.themoviedb.org/t/p/original/koNxGpDq5eIDBlXPX1GQtBuOiPS.jpg" alt="The Lord of the Rings: The Fellowship of the Ring"><b>The Lord of the Rings: The Fellowship of the Ring</b></li>
+        <li><img src="https://www.themoviedb.org/t/p/original/9eM0qvA1iHARvtOMBMMbpOgtEJw.jpg" alt="Fantastic Beasts and Where to Find Them"><b>Fantastic Beasts and Where to Find Them</b></li>
+        <li><img src="https://image.tmdb.org/t/p/original/kpGNMRU8n74sZ2tVyACcV3ppRpO.jpg" alt="The Chronicles of Narnia: The Lion, the Witch and the Wardrobe"><b>The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</b></li>
+        <li><img src="https://www.themoviedb.org/t/p/original/f2XXKzOn9WJAavz0sVka6aaonPR.jpg" alt="Pan's Labyrinth"><b>Pan's Labyrinth</b></li>
     </ul>
     <hr>
 </body>
